@@ -1,0 +1,19 @@
+.text-field{
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-background-image: url("images/username.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-prompt-text-fill:  rgb(0,161,231);
+}
+.password-field{
+    -fx-background-image: url("images/password.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-prompt-text-fill:  rgb(0,161,231);
+}
+.button{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-text-fill:  rgb(0,161,231);
+}

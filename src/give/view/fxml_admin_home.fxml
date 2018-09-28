@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+
+<AnchorPane fx:id="mainPane" onMousePressed="#mainPanePressed" onMouseDragged="#mainPaneDragged" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.AdminHomeController">
+    <stylesheets>
+        <URL value="@admin_home.css"/>
+    </stylesheets>
+    <children>
+
+      <HBox alignment="CENTER" layoutX="0" layoutY="0" spacing="70" prefHeight="400" prefWidth="600">
+      <Button fx:id="btnCharity" mnemonicParsing="false" onAction="#charityButtonPressed" prefHeight="200" prefWidth="200" text="Charities" />
+      <Button fx:id="btnAccount" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="200" prefWidth="200" text="Account" />
+      </HBox>
+      
+      <Label fx:id="lblUserName" visible="false" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="222.0" text="Admin"/>
+      <Button fx:id="btnMinimize" layoutX="540.0" layoutY="-7" maxHeight="12" maxWidth="25" text="_" alignment="TOP_CENTER" onAction="#minimizeButtonPressed"  />
+      <Button fx:id="btnClose" layoutX="565.0" layoutY="-7" maxHeight="12" maxWidth="25" text="x" alignment="TOP_CENTER" onAction="#closeButtonPressed" />
+      <Hyperlink fx:id="linkLogout" layoutX="525.0" layoutY="32.0" onAction="#onLinkLogoutPressed" text="LOGOUT" />
+      
+   </children>
+</AnchorPane>

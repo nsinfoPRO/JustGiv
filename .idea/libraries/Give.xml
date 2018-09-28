@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Give">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/run545192341/Give.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

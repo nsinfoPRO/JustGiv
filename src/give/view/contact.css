@@ -1,0 +1,201 @@
+@font-face{
+
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+
+}
+
+#linkCharity {
+    -fx-underline: true;
+}
+
+#mainPane{
+
+    -fx-background-color: white;
+
+}
+
+/*Top Menu Style START --------------------------------------------------------*/
+#btnMenuBack{
+    -fx-background-image: url("images/backButton.jpg");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: rgba(52, 73, 94, 0.2);
+    -fx-border-style:solid;
+    -fx-border-width: 0 0 3 0;
+}
+
+#btnMenuBack:hover{
+    -fx-cursor: hand;
+}
+
+#menuBar{
+
+    -fx-background-color: rgba(0, 173, 239 ,1.0);
+    -fx-border-color: rgba(52, 73, 94, 0.3);
+    -fx-border-style:solid;
+    -fx-border-width: 0 0 3 0;
+
+}
+
+#logo{
+
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 31;
+    -fx-font-weight: BOLD;
+}
+
+#bntGive{
+
+    -fx-background-color: transparent;
+    -fx-background-image:url("images/give.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+
+}
+#bntGive:hover{
+    -fx-cursor: hand;
+}
+#btnMenuBack{
+    -fx-background-image:url("images/backButton.jpg");
+}
+
+#btnMenu Hyperlink {
+
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: BOLD;
+
+}
+
+#btnBackCat{
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    
+    -fx-background-color: white;
+    -fx-background-radius: 200;
+    -fx-background-insets: 45;
+    -fx-text-fill:black;
+}
+
+#btnBackCat:hover{
+    -fx-text-fill: red;
+    -fx-cursor: hand;
+}
+
+#btnMenu .button:hover{
+
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+
+}
+
+#btnMinimize{
+
+    -fx-background-color: transparent;
+    -fx-font-family: Kartika;
+    -fx-font-size:14;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 5 0 0 0;
+
+}
+
+#btnClose{
+    -fx-background-color: transparent;
+    -fx-font-family: Kartika;
+    -fx-font-size:19;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 5 5 12 5;
+ }
+
+#linkLogout{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 16;
+    -fx-text-fill:white;
+
+}
+
+#lblUserName{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 18;
+    -fx-text-fill:white;
+
+}
+
+
+/*Top Menu Style END --------------------------------------------------------*/
+
+#scrollPane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#scrollPane{
+    -fx-background-color: transparent;
+}
+
+#blankSpacelinePane{
+ -fx-background-color: rgba(0, 140, 210, 1);   
+}
+
+#myCharTxt{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 25;
+    -fx-text-fill: rgba(0, 173, 239, 1);
+    -fx-padding: 10 70 0 70;
+
+}
+
+#seperatorLabel{
+
+    -fx-min-width: 50;
+    -fx-max-width: 700;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 21;
+    -fx-text-fill: #00A8E7;
+
+}
+#contactPane{
+  -fx-background-color: #00A8E7;   
+}
+
+#firstLabel {
+   -fx-font-size: 26;
+   -fx-font-family: Comfortaa;
+   -fx-text-fill: white;
+   -fx-padding: 0 0 -10 -5;
+/*   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+#secondLabel {
+   -fx-font-size: 26;
+    -fx-font-family: Comfortaa;
+   -fx-text-fill: white;
+   -fx-padding: 0 0 -10 -5;
+/*   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+#thirdLabel {
+   -fx-font-size: 32;
+   -fx-font-family: Comfortaa;
+   -fx-text-fill: white;
+   -fx-padding: 0 0 -10 -5;
+   -fx-font-weight: bold ;
+       
+/*   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+
+#account-menubutton{
+    -fx-background-color:white ;
+    -fx-background-radius: 10;
+    -fx-text-fill: #00A8E7;
+    -fx-padding: 5 10 5 10;
+   
+}

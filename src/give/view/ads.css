@@ -1,0 +1,61 @@
+@font-face{
+    
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+    
+}
+
+#mainPane{
+    -fx-padding:0 0 0 0;
+    -fx-background-color: #00A8E7;
+    -fx-spacing: 0;
+    -fx-background-insets: 0.0 0.0 0.0 0.0;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    
+
+} 
+
+#imageView{
+    -fx-padding:0 0 0 0;
+    -fx-background-color: #FF0000;
+    -fx-spacing: 0;
+    -fx-background-insets: 0.0 0.0 0.0 0.0;
+    -fx-border-width: 0;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+}
+
+#pause, #back{
+    
+    -fx-background-color:white;
+    -fx-text-fill: #00A8E7;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 13;
+ 
+    
+}
+#close{
+    -fx-shadow-highlight-color: transparent;
+    -fx-outer-borde: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color: transparent;
+    -fx-background-color: transparent;
+    -fx-font-family: Kartika;
+    -fx-font-size:19;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-padding:0 0 0 0;  
+    -fx-spacing: 0;
+}
+
+#close1:hover{    
+    -fx-cursor: hand;
+}
+
+#closeImageView1:hover{    
+    -fx-cursor: hand;
+}

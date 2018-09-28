@@ -1,0 +1,100 @@
+@font-face{
+    
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+    
+}
+
+
+#mainPane{
+
+    -fx-background-color: #00A8E7;
+
+}
+
+#txtAdminPanel{
+    
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 22;
+    -fx-text-fill:white;
+    
+}
+
+.text-field{
+    
+    -fx-background-color:white;
+    -fx-background-radius:14;
+    -fx-font-family:Courier New;
+    -fx-font-size: 18;
+    -fx-text-weight: bold;
+    -fx-text-fill:#3498db;
+
+    
+}
+
+.toggle-button{
+    
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-font-size: 14;
+    -fx-font-family: Slim Joe;
+    -fx-text-fill:#3498db;
+    
+}
+
+
+.label{
+    
+    -fx-font-familly:Slim Joe;
+    -fx-text-fill:white;
+    -fx-font-size: 20;
+    
+}
+
+.hyperlink{
+    
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 16;
+    -fx-text-fill:white;
+    
+}
+
+.text-area{
+    
+    -fx-font-family: Slim Joe;
+    -fx-text-fill:#00A8E7;
+    -fx-font-size: 15;
+    
+}
+
+.combo-box{
+    
+    -fx-background-color:white;
+    -fx-text-fill:#3498db;
+    -fx-font-size: 15;
+    -fx-background-radius:25;
+    
+}
+
+.combo-box .list-view{
+    
+    -fx-font-familly: Slim Joe;
+    -fx-text-fill:#3498db;
+    -fx-background-color:white;
+    
+}
+
+.combo-box .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill:#3498db;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: #00A8E7;
+    -fx-text-fill: white;
+}

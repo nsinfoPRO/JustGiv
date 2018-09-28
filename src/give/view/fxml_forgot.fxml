@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<AnchorPane fx:id="mainPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.ForgotController">
+    <stylesheets>
+        <URL value="@forgot.css"/>
+    </stylesheets>
+    <children>
+      <Button fx:id="close" text="X" alignment="CENTER" layoutX="380" onAction="#closeBtnPressed" layoutY="0" prefHeight="20" prefWidth="20"/>
+      <Label fx:id="title" text="PASSWORD RECOVER" alignment="CENTER" layoutX="70" layoutY="5" prefHeight="70" prefWidth="260"/>
+      <TextField fx:id="codeInput" promptText="CODE" visible="false" alignment="CENTER" layoutX="70" layoutY="80" prefHeight="100" prefWidth="260"/>  
+      <TextField fx:id="emailInput" promptText="ENTER EMAIL" alignment="CENTER" layoutX="100" layoutY="180" prefHeight="40" prefWidth="200"/>  
+      <Label fx:id="infoInput" text="Please enter your email" alignment="CENTER" layoutX="70" layoutY="100" prefHeight="100" prefWidth="260"/>
+      <PasswordField fx:id="passwordInput" onKeyTyped="#keyTyped"  visible="false" alignment="CENTER" layoutX="100" layoutY="150"/>
+      
+      
+      <HBox fx:id="boxBtn" alignment="CENTER" layoutX="0" layoutY="260" minWidth="400">
+      <Button fx:id="sendBtn" text="SEND" onAction="#sendBtnPressed"  prefHeight="30" prefWidth="70"/>  
+      <Button fx:id="checkBtn" text="CHECK" visible="false" onAction="#checkBtnPressed"  prefHeight="30" prefWidth="70"/>  
+      <Button fx:id="changeBtn" text="CHANGE" visible="false" onAction="#changeBtnPressed"  prefHeight="30" prefWidth="100"/>  
+      </HBox>
+       
+    </children>
+</AnchorPane>
+
+
+<!--UPDATE `prebid`.`user` SET `password`=MD5('test') WHERE `email`='ilija@ilija.com';-->

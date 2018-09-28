@@ -1,0 +1,53 @@
+@font-face{
+    
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+    
+}
+
+#mainPane{
+
+    -fx-background-color: #00A8E7;
+
+} 
+
+#muted{
+    
+    -fx-cursor: hand;
+}
+
+#muted{
+    
+    -fx-text-fill: white;
+    -fx-font-familly: Slim Joe;
+    
+    
+}
+
+#muted .box{
+    
+    -fx-background-color:transparent;
+    -fx-border-style: solid;
+    -fx-border-color:white;
+    -fx-border-width: 2 ;
+    
+    
+    
+}
+
+#muted:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+
+#pause, #back{
+    
+    -fx-background-color:white;
+    -fx-text-fill: #00A8E7;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 13;
+ 
+    
+}

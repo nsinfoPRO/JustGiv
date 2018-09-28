@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="626.0" style="-fx-background-color: rgb(0,161,231);" stylesheets="@login.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.view.Fxml_loginController">
+   <children>
+      <Label layoutX="283.0" layoutY="34.0" text="justGiv" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="77.0" text="choose your charities, give to them for free" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="38.0" prefWidth="258.0" text="log in">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="225.0" layoutY="297.0" text="don't have an account?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#onCreateAccountPressed" prefHeight="38.0" prefWidth="258.0" text="sign up">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="587.0" layoutY="2.0"  onMouseClicked="#minimumWindow" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="604.0" layoutY="5.0" onMouseClicked="#close" text="x" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtUserEmail" layoutX="188.0" layoutY="129.0" prefHeight="38.0" prefWidth="250.0" promptText="email" text="">
+         <padding>
+            <Insets left="25.0" />
+         </padding></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="188.0" layoutY="189.0" prefHeight="38.0" prefWidth="249.0" promptText="password" text="">
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </PasswordField>
+      <Button alignment="TOP_LEFT" layoutX="329.0" layoutY="195.0" mnemonicParsing="false" onAction="#onForgotPressed" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: transperant; -fx-text-fill: white; -fx-text-fill: #c8c8c8;" text="forgot password?">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

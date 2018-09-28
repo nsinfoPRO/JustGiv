@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<AnchorPane fx:id="mainPane" onMousePressed="#mainPanePressed" onMouseDragged="#mainPaneDragged" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.CharityListController">
+   <stylesheets>
+      <URL value="@charity_list.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="curChar" layoutX="25.0" layoutY="14.0" prefHeight="40.0" prefWidth="222.0" text="Current Charities"/>
+
+      
+      
+      <TableView fx:id="tableCharities"   layoutX="23.0" layoutY="62.0" prefHeight="480.0" prefWidth="847.0"/>
+
+      
+      
+      <Hyperlink fx:id="linkNew" layoutX="709.0" layoutY="38.0" onAction="#onLinkNewPressed" text="New |" />
+      <Hyperlink fx:id="lineEdit" layoutX="751.0" layoutY="38.0" onAction="#onLinkEditPressed" text="Edit |" />
+      <Hyperlink fx:id="linkDelete" layoutX="787.0" layoutY="38.0" onAction="#onLinkDeletePressed" text="Delete" />
+
+      <Hyperlink layoutX="14.0" layoutY="550.0" onAction="#onCloseBtnPressed" text="&lt; Back to Home" />
+   </children>
+</AnchorPane>

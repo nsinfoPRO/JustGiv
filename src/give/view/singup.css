@@ -1,0 +1,64 @@
+@font-face{
+    
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+    
+}
+
+
+#mainPane{
+    
+    -fx-background-color: rgba(52, 152, 219,1.0);
+    
+}
+
+#title{
+    
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-background-color: rgba(52, 152, 219,1.0);
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    
+    
+    
+}
+
+.text-field{
+    
+    -fx-background-color: white;
+    -fx-text-fill: rgba(52, 152, 219,1.0);
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 14;
+    -fx-prompt-text-fill: white;
+    
+}
+
+.label{
+    
+    -fx-text-fill:white;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 15;
+    
+}
+
+.button{
+    
+    -fx-background-color:white;
+    -fx-background-radius: 25;
+    -fx-text-fill:rgba(52, 152, 219,1.0);
+    -fx-font-familly: Slim Joe;
+    -fx-font-size: 14;
+    
+}
+
+.toggle-button{
+    
+    -fx-background-color:white;
+    -fx-background-radius: 25;
+    -fx-text-fill:rgba(52, 152, 219,1.0);
+    -fx-font-familly: Slim Joe;
+    -fx-font-size: 14;
+    
+}

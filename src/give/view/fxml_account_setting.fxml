@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="650.0" prefWidth="1100.0" maxWidth="1100.0" maxHeight="650.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.UserSettingController">
+    <stylesheets>
+        <URL value="@account.css" />
+    </stylesheets>
+    <children>
+        <!-- Top Menu Bar Start-->
+       
+        <Pane fx:id="menuBar" prefHeight="70" prefWidth="1100.0" layoutX="0" layoutY="0" onMousePressed="#menuBarPressed" onMouseDragged="#menuBarDragged" >
+            <Label visible="false" fx:id="lblUserName" text="test" alignment="CENTER" layoutX="870" layoutY="34.0" prefHeight="23.0" prefWidth="183.0"/>
+            <Label fx:id="logo" text="justGiv" layoutX="50" layoutY="10"/>
+          
+            <!-- Button GIVE (video player start) -->
+            <Button fx:id="bntGive" onAction="#giveButtonPressedAds" layoutX="800" layoutY="20" prefHeight="34.0" prefWidth="100.0" alignment="CENTER" text="" />
+            <Button fx:id="btnMenuBack" text="" visible = "false" prefHeight="70" prefWidth="35" layoutX="0" layoutY="0" onAction="#menuBackPressed"/>
+          
+            <!-- Menu buttons -->
+            <HBox fx:id="btnMenu" layoutX="240.0" layoutY="32.0" spacing="40" alignment="CENTER">
+                <Hyperlink fx:id="linkCharity"  onAction="#charityButtonPressed" layoutY="0" prefHeight="34.0" prefWidth="120.0" alignment="CENTER" text="CHARITIES" />
+                <Hyperlink fx:id="linkAccount" onAction="#accountButtonPressed" layoutY="0" prefHeight="34.0" prefWidth="100.0" alignment="CENTER" text="ACCOUNT" />
+                <Hyperlink fx:id="linkContact"  onAction="#contactButtonPressed" prefHeight="34.0" prefWidth="120.0" layoutY="0" alignment="CENTER" text="CONTACT US" />
+            </HBox>
+          
+            <!-- Minimise, close, logout buttons -->
+            <Button fx:id="btnMinimize" layoutX="1030.0" layoutY="-7" maxHeight="12" maxWidth="25" text="_" alignment="TOP_CENTER" onAction="#minimizeButtonPressed"  />
+            <Button fx:id="btnClose" layoutX="1055.0" layoutY="-7" maxHeight="12" maxWidth="25" text="x" alignment="TOP_CENTER" onAction="#closeButtonPressed" />
+            <Hyperlink fx:id="linkLogout" layoutX="1020.0" layoutY="32.0" onAction="#onLinkLogoutPressed" text="LOGOUT" />
+
+        </Pane>
+      
+        <VBox fx:id="accountSettingsPane" visible="true" alignment="TOP_CENTER" prefWidth="950" prefHeight="450" layoutX="75" layoutY="125">
+              
+            <fx:define>
+                <ToggleGroup fx:id="tGroup"/>
+            </fx:define>
+            
+            <HBox fx:id="titleBar" alignment="CENTER" prefWidth="950" prefHeight="65">
+                <Label fx:id="title" text="ACCOUNT SETTINGS"/>
+            </HBox>
+              
+            <HBox fx:id="loginBar" alignment="CENTER" maxWidth="800" prefHeight="300" >
+                <VBox fx:id="emailChangePane" prefWidth="400" prefHeight="260" alignment="CENTER_LEFT">
+                      
+                    <Label fx:id="changeEmailLabel" text="Change Email" maxWidth="280" prefHeight="45" alignment="CENTER" />
+                    <TextField fx:id="emailChangeField" promptText="InsertEmail" alignment="CENTER" maxWidth="300" prefHeight="50"/>
+                    
+                </VBox>
+                <VBox fx:id="passwordChangePane" prefWidth="400" prefHeight="260" alignment="TOP_CENTER">
+                    <Label fx:id="changePasswordLabel" text="Change Password" maxWidth="400" prefHeight="53" alignment="CENTER" />
+                    <Label fx:id="currentPasswordLabel" text="CurrentPassword" prefWidth="250" alignment="CENTER_LEFT"/>
+                    
+                    <TextField fx:id="currentPasswordField" promptText="CurrentPassword" alignment="CENTER" maxWidth="250" prefHeight="50"/>
+                    <Label fx:id="newPasswordLabel" text="NewPassword" prefWidth="250" alignment="CENTER_LEFT"/>
+                    <PasswordField fx:id="newPasswordField" promptText="NewPassword" alignment="CENTER" maxWidth="250" prefHeight="50"/>
+                    <Label fx:id="confirmPasswordLabel" text="ConfirmPassword" prefWidth="250" alignment="CENTER_LEFT"/>
+                    <PasswordField fx:id="confirmPasswordField" promptText="ConfirmPassword" alignment="CENTER" maxWidth="250" prefHeight="50"/>
+                </VBox>
+            </HBox>
+            <Button fx:id="btnSave" text="Save" prefWidth="150" prefHeight="60" />
+        </VBox>
+    </children>
+</AnchorPane>

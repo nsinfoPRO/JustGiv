@@ -1,0 +1,494 @@
+@font-face{
+
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+
+}
+
+#linkCharity {
+    -fx-underline: true;
+}
+
+
+
+
+#mainPane{
+
+    -fx-background-color: white;
+
+}
+
+/*Top Menu Style START --------------------------------------------------------*/
+#btnMenuBack{
+    -fx-background-image: url("images/backButton.jpg");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: rgba(52, 73, 94, 0.2);
+    -fx-border-style:solid;
+    -fx-border-width: 0 0 3 0;
+}
+
+#btnMenuBack:hover{
+    -fx-cursor: hand;
+}
+
+#menuBar{
+
+    -fx-background-color: rgba(0, 173, 239 ,1.0);
+    -fx-border-color: rgba(52, 73, 94, 0.3);
+    -fx-border-style:solid;
+    -fx-border-width: 0 0 3 0;
+
+}
+
+
+
+#logo{
+
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 31;
+    -fx-font-weight: BOLD;
+}
+
+#bntGive{
+
+    -fx-background-color: transparent;
+    -fx-background-image:url("images/give.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+
+}
+#bntGive:hover{
+    -fx-cursor: hand;
+}
+#btnMenuBack{
+    -fx-background-image:url("images/backButton.jpg");
+}
+
+#btnMenu Hyperlink {
+
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: BOLD;
+
+}
+
+#btnBackCat{
+    -fx-font-family: Kartika;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    
+    -fx-background-color: white;
+    -fx-background-radius: 200;
+    -fx-background-insets: 45;
+    -fx-text-fill:black;
+}
+
+#btnBackCat:hover{
+    -fx-text-fill: red;
+    -fx-cursor: hand;
+}
+
+#btnMenu .button:hover{
+
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+
+
+}
+
+#btnMinimize{
+
+    -fx-background-color: transparent;
+    -fx-font-family: Kartika;
+    -fx-font-size:14;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 5 0 0 0;
+
+
+
+}
+
+#btnClose{
+    -fx-background-color: transparent;
+    -fx-font-family: Kartika;
+    -fx-font-size:19;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 5 5 12 5;
+    
+
+
+}
+
+#linkLogout{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 16;
+    -fx-text-fill:white;
+
+}
+
+#lblUserName{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 18;
+    -fx-text-fill:white;
+
+}
+
+
+/*Top Menu Style END --------------------------------------------------------*/
+
+
+
+
+
+#scrollPane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#scrollPane{
+
+    -fx-background-color: transparent;
+
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+    -fx-padding:4px;
+}
+.increment-button , .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:transparent;
+	-fx-padding:4px;
+}
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: #00A8E7;
+ 
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #00A8E7;
+    -fx-background-radius: 1em;
+}
+ 
+#charitiesList{
+
+}
+
+#charitiesMajorCategoryList .button{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 170;
+    -fx-background-insets: 45;
+    -fx-text-fill:transparent;
+}
+
+#charitiesMajorCategoryList .button:hover{
+    -fx-cursor: hand;
+}
+
+#urgentChar{
+
+    -fx-background-image:url("images/urgent-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#blankSpacelinePane{
+ -fx-background-color: rgba(0, 140, 210, 1);   
+}
+
+#charitiesSelectedPan{
+    -fx-background-color: rgba(0, 173, 239, 1);
+    -fx-border-color: rgba(52, 73, 94, 0.3);
+    -fx-border-style:solid;
+    -fx-border-width: 3 0 0 0;
+}
+
+#educationChar{
+
+    -fx-background-image:url("images/education-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#animalsChar{
+
+    -fx-background-image:url("images/animals-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+
+#enivironmentChar{
+
+    -fx-background-image:url("images/environment-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#healthChar{
+
+    -fx-background-image:url("images/health-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+
+#refugesChar{
+
+    -fx-background-image:url("images/refugees-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#hungerChar{
+
+    -fx-background-image:url("images/hunger-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#waterChar{
+
+    -fx-background-image:url("images/water-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#childrenChar{
+
+    -fx-background-image:url("images/children-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#povertyChar{
+
+    -fx-background-image:url("images/poverty-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#injusticeChar{
+
+    -fx-background-image:url("images/injustice-new.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+
+#myCharTxt{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 25;
+    -fx-text-fill: rgba(0, 173, 239, 1);
+    -fx-padding: 10 70 0 70;
+
+}
+
+#selUpToTxt1{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-padding: 0 70 5 70;
+
+
+}
+#selUpToTxt2{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-padding: 0 70 2 70;
+
+
+}
+
+#selectField .button{
+
+    -fx-background-color: rgba(52, 73, 94,0.3);
+    -fx-background-radius: 0;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 18;
+    -fx-text-alignment: center;
+    -fx-text-fill: rgba(255, 255, 255, 0.6);
+    
+
+}
+
+#selectField .button:disabled{
+    
+    -fx-opacity: 1;
+    
+}
+
+
+#clickCateg{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 22;
+    -fx-text-fill: white;
+    -fx-padding:50 0 35 15;
+
+}
+
+#charityCheckList{
+
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-padding:-250 0 0 0;
+    -fx-background-insets: -250 0 0 0;
+    -fx-border-insets: -250 0 0 0;
+    -fx-max-width: 1000;
+
+
+
+}
+
+
+#checkPane{
+
+    -fx-background-color: transparent;;
+    -fx-background-radius: 0;
+    -fx-min-height: 70;
+    -fx-max-width: 1800;
+
+
+}
+
+#websiteUrl{
+     -fx-min-width: 10;
+    -fx-max-width: 1000;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 21;
+    -fx-text-fill: #00A8E7;
+}
+
+#descriptionLabel{
+
+    -fx-min-width: 10;
+    -fx-max-width: 850;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 21;
+    -fx-text-fill: #7f8c8d;
+    -fx-border-style: solid;
+    -fx-border-color:#00A8E7;
+    -fx-border-width: 0 0 2 0;
+    
+}
+
+#nameLabel{
+
+    -fx-min-width: 700;
+    -fx-max-width: 700;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 21;
+    -fx-text-fill: #00A8E7;
+
+}
+
+#seperatorLabel{
+
+    -fx-min-width: 50;
+    -fx-max-width: 700;
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 21;
+    -fx-text-fill: #00A8E7;
+
+}
+
+
+#checkBox{
+
+    -fx-text-fill: transparent;
+
+}
+
+#checkBox .box{
+
+    -fx-background-color:transparent;
+    -fx-border-style: solid;
+    -fx-border-color:#7f8c8d;
+    -fx-border-width: 2 ;
+
+}
+
+#checkBox:hover {
+
+    
+   -fx-cursor: hand;
+
+
+}
+
+#checkBox:selected .mark {
+
+    -fx-background-color: white;
+   
+
+
+}
+
+#checkBox:selected .box{
+    
+    -fx-background-color:#00A8E7;
+    -fx-border-color:#00A8E7;
+    
+    
+}
+
+
+#charityName{
+
+    -fx-font-family: Slim Joe;
+    -fx-text-fill: #00A8E7;
+    -fx-font-size: 25;
+    -fx-padding: 0 700 0 0;
+    -fx-border-insets: 0 700 0 0;
+    -fx-background-insets: 0 700 0 0;
+
+}
+
+#charityPic{
+    
+    -fx-background-radius:25
+    
+}
+
+#charityCategoryLogoImg{
+    
+    -fx-background-color: transparent;
+   
+}
+
+#account-menubutton{
+    -fx-background-color:white ;
+    -fx-background-radius: 10;
+    -fx-text-fill: #00A8E7;
+    -fx-padding: 5 10 5 10;
+   
+}
+
+ 
+
+ 

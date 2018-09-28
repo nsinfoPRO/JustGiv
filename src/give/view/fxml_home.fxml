@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+
+<AnchorPane fx:id="mainPane" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+    <children>
+       
+        <!-- Top Menu Bar Start-->
+       
+        <Pane fx:id="menuBar" layoutX="0" layoutY="0" onMouseDragged="#menuBarDragged" onMousePressed="#menuBarPressed" prefHeight="70" prefWidth="1100.0">
+            <children>
+                <!-- Button GIVE (video player start) -->
+                <Label fx:id="lblUserName" alignment="CENTER" layoutX="870" layoutY="34.0" prefHeight="23.0" prefWidth="183.0" text="test" visible="false" />
+                <Label fx:id="logo" layoutX="50" layoutY="10" text="justGiv" />
+             
+                <!-- Button GIVE (video player start) -->
+                <Button fx:id="bntGive" alignment="CENTER" layoutX="800" layoutY="20" onAction="#giveButtonPressedAds" prefHeight="34.0" prefWidth="100.0" text="" />
+                <Button fx:id="btnMenuBack" visible = "false" layoutX="0" layoutY="0" onAction="#menuBackPressed" prefHeight="70" prefWidth="35" text="" />
+             
+                <!-- Menu buttons -->
+                <HBox fx:id="btnMenu" alignment="CENTER" layoutX="240.0" layoutY="32.0" spacing="40">
+                    <children>
+                        <Hyperlink fx:id="linkCharity" alignment="CENTER" layoutY="0" onAction="#charityButtonPressed" prefHeight="34.0" prefWidth="120.0" text="CHARITIES" />
+                        <Hyperlink fx:id="linkAccount" alignment="CENTER" layoutY="0" onAction="#accountButtonPressed" prefHeight="34.0" prefWidth="100.0" text="ACCOUNT" />
+                        <Hyperlink fx:id="linkContact" alignment="CENTER" layoutY="0" onAction="#contactButtonPressed" prefHeight="34.0" prefWidth="120.0" text="CONTACT US" />
+                    </children>
+                </HBox>
+                                                            
+
+             
+                <!-- Minimise, close, logout buttons -->
+                <Button fx:id="btnMinimize" alignment="TOP_CENTER" layoutX="1030.0" layoutY="-7" maxHeight="12" maxWidth="25" onAction="#minimizeButtonPressed" text="_" />
+                <Button fx:id="btnClose" alignment="TOP_CENTER" layoutX="1055.0" layoutY="-7" maxHeight="12" maxWidth="25" onAction="#closeButtonPressed" text="x" />
+                <Hyperlink fx:id="linkLogout" layoutX="1020.0" layoutY="32.0" onAction="#onLinkLogoutPressed" text="LOGOUT" />
+            </children>
+
+        </Pane>
+      
+        <!-- Top Menu Bar End-->
+      
+        <Pane fx:id="InfoPane" layoutX="0" layoutY="70" prefHeight="80" prefWidth="1100.0">
+            <children>
+                <VBox fx:id="selectInfoLbl" prefHeight="65" prefWidth="1000">
+                    <children>
+                        <Label fx:id="myCharTxt" text="Charity Selection" />
+                        <Label fx:id="selUpToTxt1" text="click the categories | select up to 4 charities" />
+                        <!--<Label fx:id="selUpToTxt2" text="select up to 4 charities" />-->
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+      
+        <!-- Main pane of program START -->
+        <FlowPane fx:id="charitiesMajorCategoryList" alignment="TOP_CENTER" layoutY="170" prefHeight="300" prefWidth="1100.0">
+            <children>
+                <Button fx:id="urgentChar" minHeight="150" minWidth="200" onAction="#charPressed" text="1$URGENT" />
+                <Button fx:id="enivironmentChar" minHeight="150" minWidth="200" onAction="#charPressed" text="4$ENVIRONMENT" />
+                <Button fx:id="healthChar" minHeight="150" minWidth="200" onAction="#charPressed" text="5$HEALTH" />
+                <Button fx:id="waterChar" minHeight="150" minWidth="200" onAction="#charPressed" text="8$WATER" />
+                <Button fx:id="hungerChar" minHeight="150" minWidth="200" onAction="#charPressed" text="7$HUNGER" />
+                <Button fx:id="educationChar" minHeight="150" minWidth="200" onAction="#charPressed" text="2$EDUCATION" />
+                <Button fx:id="povertyChar" minHeight="150" minWidth="200" onAction="#charPressed" text="10$POVERTY" />
+                <Button fx:id="refugesChar" minHeight="150" minWidth="200" onAction="#charPressed" text="6$REFUGEES" />
+                <Button fx:id="childrenChar" minHeight="150" minWidth="200" onAction="#charPressed" text="9$CHILDREN" />
+                <Button fx:id="animalsChar" minHeight="150" minWidth="200" onAction="#charPressed" text="3$ANIMALS" />
+            </children>
+        </FlowPane>
+        
+        <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="0" layoutY="170" prefHeight="300" prefWidth="1100.0" vbarPolicy="AS_NEEDED" visible="false">
+            <content>
+
+                <FlowPane fx:id="charitiesMinorCategoryList" alignment="TOP_CENTER" layoutX="0" minHeight="200" prefWidth="1100.0">
+                    <children>
+                        <VBox fx:id="charityCheckList" alignment="TOP_CENTER" maxHeight="2000" minHeight="0" minWidth="1000" spacing="0" visible="false" VBox.vgrow="ALWAYS">
+                            <children>
+                            
+                            </children>
+                        </VBox>
+                       
+                        <VBox fx:id="backButtonContainer" alignment="TOP_LEFT" maxHeight="50" minHeight="50" minWidth="1000" spacing="0" visible="true" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btnBackCat" minHeight="50" minWidth="200" onAction="#btnBackCatPreesed" text="Back" />
+                            </children>
+                        </VBox>
+                    </children>
+                    
+                </FlowPane>
+            </content>
+        </ScrollPane>
+        
+        <Pane fx:id="charitiesSelectedPan" layoutX="0" layoutY="470" prefHeight="240" prefWidth="1100.0">
+            <children>
+   
+                <!-- Select Field -->
+                <HBox fx:id="selectField" alignment="CENTER" layoutY="0" prefHeight="240" prefWidth="1100" spacing="40" visible="true">
+                    <children>
+                        <Pane fx:id="firstField" disable="false" maxHeight="203.0" maxWidth="205" minWidth="203" prefHeight="203.0" prefWidth="203.0">
+                            <children>                            
+                                <Button disable="true" maxWidth="203.0" minWidth="203.0" prefHeight="203.0" prefWidth="203.0" text="" wrapText="true" />
+                                <Button fx:id="btnClose1" visible = "false" layoutX="163.0" layoutY="0.0" prefHeight="40.0" prefWidth="40.0" onAction="#onClose" text="X" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="secondField" disable="false" maxHeight="203.0" maxWidth="203.0" minWidth="203.0" prefHeight="203.0">
+                            <children>
+                                <Button disable="true" maxWidth="203.0" minWidth="203.0" prefHeight="203.0" text="" />
+                                <Button fx:id="btnClose2" visible = "false" layoutX="163.0" layoutY="0.0" prefHeight="40.0" prefWidth="40.0" onAction="#onClose" text="X" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="thirdField" disable="false" maxHeight="203.0" maxWidth="203.0" minWidth="203.0" prefHeight="203.0">
+                            <children>
+                                <Button disable="true" maxWidth="203.0" minWidth="203.0" prefHeight="203.0" text="" />
+                                <Button fx:id="btnClose3" visible = "false" layoutX="163.0" layoutY="0.0" prefHeight="40.0" prefWidth="40.0" onAction="#onClose" text="X" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="fourthField" disable="false" maxHeight="203.0" maxWidth="203.0" minWidth="203.0" prefHeight="203.0">
+                            <children>
+                                <Button disable="true" maxWidth="203.0" minWidth="203.0" prefHeight="203.0" text="" />
+                                <Button fx:id="btnClose4" visible = "false" layoutX="163.0" layoutY="0.0" prefHeight="40.0" prefWidth="40.0" onAction="#onClose" text="X" />
+                            </children>
+                        </Pane>
+                    </children>
+                  
+                    <!--
+                    <Button fx:id="firstField" disable="true" wrapText="true" minWidth="203.0" maxWidth="203.0" prefWidth="203.0" prefHeight="203.0" text=""/>
+                    <Button fx:id="secondField" disable="true" prefHeight="203.0" minWidth="203.0" maxWidth="203.0" text=""/>
+                    <Button fx:id="thirdField" disable="true" prefHeight="203.0" minWidth="203.0"  maxWidth="203.0"  text=""/>
+                    <Button fx:id="fourthField" disable="true" prefHeight="203.0" minWidth="203.0" maxWidth="203.0" text=""/>
+                    -->
+                </HBox>
+            </children>
+
+        </Pane>
+        <!--Main Pane of program END-->
+      
+    </children>
+</AnchorPane>

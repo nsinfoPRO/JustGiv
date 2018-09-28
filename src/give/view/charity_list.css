@@ -1,0 +1,71 @@
+@font-face{
+    
+    font-family: Slim Joe;
+    src: url("fonts/Slim-Joe.otf");
+    
+}
+
+#mainPane{
+
+    -fx-background-color: #00A8E7;
+
+}
+
+.hyperlink{
+
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 16;
+    -fx-text-fill:white;
+    -fx-padding:0 0 10 0;
+
+}
+
+#tableCharities .table-cell {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 5px;
+}
+
+#tableCharities{
+    
+    -fx-border-style:solid;
+    -fx-border-color:white;
+    -fx-border-width:0 1 1 1;
+    
+}
+
+#tableCharities .table-cell:even {
+-fx-background-color: #00A8E7;
+-fx-text-fill: white;
+-fx-font-familly: Slim Joe;
+-fx-font-size: 16;
+}
+
+#tableCharities .table-cell:odd {
+-fx-background-color: #2980b9;
+-fx-text-fill: white;
+-fx-font-familly: Slim Joe;
+-fx-font-size: 16;
+}
+
+.table-view .column-header {
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: white;
+    -fx-text-fill: #00A8E7;
+    -fx-font-size: 15;
+    -fx-font-familly: Slim Joe;
+    
+}
+
+
+#curChar{
+    
+    -fx-font-family: Slim Joe;
+    -fx-font-size: 22;
+    -fx-text-fill:white;
+
+    
+}
+

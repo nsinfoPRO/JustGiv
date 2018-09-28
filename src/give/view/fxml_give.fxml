@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import java.net.URL?>
+
+
+<VBox fx:id="mainPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.GiveController">
+    <stylesheets>
+        <URL value="@give.css" />
+    </stylesheets>
+    <children>
+      <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="500.0" />
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="500.0" spacing="50.0">
+         <children>
+            <CheckBox fx:id="muted" mnemonicParsing="false" onAction="#muteCheckboxPressed" text="Mute" />
+            <Button fx:id="pause" prefWidth="80" mnemonicParsing="false" onAction="#pauseButtonPressed" text="Pause" />
+            <Button fx:id="back" prefWidth="80" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

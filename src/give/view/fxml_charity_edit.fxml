@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+
+
+<AnchorPane fx:id="mainPane" onMousePressed="#mainPanePressed" onMouseDragged="#mainPaneDragged" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.CharityEditController">
+    <stylesheets>
+        <URL value="@charity.css"/>
+    </stylesheets>
+    
+    <children>
+      <ImageView fx:id="imgLogo" fitHeight="91.0" fitWidth="91.0" layoutX="347.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="txtAdminPanel" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="222.0" text="Administrative Panel"/>
+
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="66.0" prefWidth="150" promptText="Name" />
+      <TextField fx:id="txtSite" layoutX="200.0" layoutY="66.0" prefHeight="25.0" prefWidth="200.0" promptText="Web Site" />
+      
+      <TextArea fx:id="txtBio" layoutX="14.0" layoutY="116.0" prefHeight="160.0" prefWidth="326.0" promptText="Bio" />
+      
+      <TextField fx:id="txtAmount" layoutX="360.0" layoutY="116.0" prefHeight="25.0" prefWidth="91.0" promptText="Amount in $" />
+      
+      <Label layoutX="455.0" layoutY="120.0" text="=" />
+      
+      <TextField fx:id="txtNumber" layoutX="475.0" layoutY="116.0" prefHeight="25.0" prefWidth="65.0" promptText="number" />
+      
+      <Label layoutX="545.0" layoutY="120.0" text="of" />
+      
+      <TextField fx:id="txtMetric" layoutX="360.0" layoutY="160.0" prefHeight="25.0" prefWidth="185.0" promptText="Metric" />
+      
+      <ToggleButton fx:id="btnUpload" layoutX="445.0" layoutY="215.0" mnemonicParsing="false" onAction="#onLogoUploadBtnPressed" text="Logo Upload" />
+      <ToggleButton fx:id="btnSave" layoutX="456.0" layoutY="357.0" mnemonicParsing="false" onAction="#onSaveBtnPressed" prefHeight="25.0" prefWidth="122.0" text="Add Charity" />
+      
+      <Hyperlink layoutX="14.0" layoutY="362.0" onAction="#onCloseBtnPressed" text="&lt; Back to List" />
+      
+      <ComboBox fx:id="comboCategory" layoutX="430.0" layoutY="66.0" prefWidth="150.0" prefHeight="37" promptText="Select Category" />
+   </children>
+</AnchorPane>

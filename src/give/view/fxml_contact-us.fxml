@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="give.core.controller.ContactController">
+    <stylesheets>
+        <URL value="@contact.css"/>
+    </stylesheets>
+    <children>
+        <!-- Top Menu Bar Start-->
+       
+        <Pane fx:id="menuBar" prefHeight="70" prefWidth="1100.0" layoutX="0" layoutY="0" onMousePressed="#menuBarPressed" onMouseDragged="#menuBarDragged" >
+            <Label visible="false" fx:id="lblUserName" text="test" alignment="CENTER" layoutX="870" layoutY="34.0" prefHeight="23.0" prefWidth="183.0"/>
+            <Label fx:id="logo" text="justGiv" layoutX="50" layoutY="10"/>
+          
+            <!-- Button GIVE (video player start) -->
+            <Button fx:id="bntGive" onAction="#giveButtonPressedAds" layoutX="800" layoutY="20" prefHeight="34.0" prefWidth="100.0" alignment="CENTER" text="" />
+            <Button fx:id="btnMenuBack" text="" visible = "false" prefHeight="70" prefWidth="35" layoutX="0" layoutY="0" onAction="#menuBackPressed"/>
+          
+            <!-- Menu buttons -->
+            <HBox fx:id="btnMenu" layoutX="240.0" layoutY="32.0" spacing="40" alignment="CENTER">
+                <Hyperlink fx:id="linkCharity"  onAction="#charityButtonPressed" layoutY="0" prefHeight="34.0" prefWidth="120.0" alignment="CENTER" text="CHARITIES" />
+                <Hyperlink fx:id="linkAccount" onAction="#accountButtonPressed" layoutY="0" prefHeight="34.0" prefWidth="100.0" alignment="CENTER" text="ACCOUNT" />
+                <Hyperlink fx:id="linkContact" onAction="#contactButtonPressed"  prefHeight="34.0" prefWidth="120.0" layoutY="0" alignment="CENTER" text="CONTACT US" />
+            </HBox>
+          
+          
+            <!-- Minimise, close, logout buttons -->
+            <Button fx:id="btnMinimize" layoutX="1030.0" layoutY="-7" maxHeight="12" maxWidth="25" text="_" alignment="TOP_CENTER" onAction="#minimizeButtonPressed"  />
+            <Button fx:id="btnClose" layoutX="1055.0" layoutY="-7" maxHeight="12" maxWidth="25" text="x" alignment="TOP_CENTER" onAction="#closeButtonPressed" />
+            <Hyperlink fx:id="linkLogout" layoutX="1020.0" layoutY="32.0" onAction="#onLinkLogoutPressed" text="LOGOUT" />
+
+        </Pane>
+        <HBox fx:id="contactPane" visible="true" alignment="CENTER" prefWidth="1100" prefHeight="550" layoutX="0" layoutY="70">
+                
+            <children>
+                <AnchorPane id="leftPane" prefHeight="450" maxHeight="450" prefWidth="600" >
+                   <ImageView fx:id="imageView" fitHeight="400" fitWidth="1100.0" pickOnBounds="false" preserveRatio="true" layoutX="0" layoutY="-20" >
+                        <Image url="@images/contactus.png" />
+                   </ImageView>
+                   <Label fx:id="firstLabel" text="Questions, Comments or Concerns?" layoutX="310" layoutY="220"/>
+                   <Label fx:id="secondLabel" text="send an email to us:" layoutX="310" layoutY="273.76"/>
+                   <Label fx:id="thirdLabel" text="help@justgiv.co" layoutX="310" layoutY="335"/>
+                </AnchorPane>
+            </children>        
+        </HBox>
+    </children>
+</AnchorPane>
